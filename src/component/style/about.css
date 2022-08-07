@@ -1,0 +1,116 @@
+/* @media screen and (max-width:100px) {
+    #team-container{
+        display: none;
+    }
+} */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.section-contact {
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 100px 0; */
+}
+
+.section-contact h2 {
+    text-align: center;
+    color: #0072ce;
+    margin-bottom: 20px;
+}
+
+.section-contact .contact-card {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: darkblue;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.74);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-contact .contact-card .card-image {
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.section-contact .contact-card .card-image img {
+    width: 200px;
+    height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.section-contact .contact-card .card-image h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.section-contact .contact-card .card-image h5 {
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+
+/* ========= Card-text ============ */
+.section-contact .contact-card .card-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.section-contact .contact-card .card-text .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #eb367b;
+    border: 2px solid transparent;
+}
+
+.section-contact .contact-card .card-text .btn:hover {
+    background-color: #fff;
+    color: #eb367b;
+    border: 2px solid #eb367b;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    .section-contact .contact-card {
+        flex-direction: row;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section-contact .contact-card .card-image {
+        margin-bottom: 0px;
+        padding-right: 20px;
+    }
+}

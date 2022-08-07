@@ -1,0 +1,134 @@
+.Team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#overflow-X {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    margin: 10px;
+}
+.ucard {
+    /* width: 403px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ucard>img {
+    width: 280px;
+    height: 253px;
+    border-radius: 10px;
+}
+#overflow-X {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin: 39px;
+}
+.ucard {
+    /* width: 403px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    margin: 2px;
+    border-radius: 9px;
+    border-color:#7fff0052;;
+    padding: 10px;
+    background: darkslategrey;
+}
+.line>p {
+    margin: 2rem;
+    word-break: break-word;
+    
+}
+.font {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+    color: blanchedalmond;
+}
+.font-p {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: monospace;
+    color: blanchedalmond;
+}
+.container-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2.head-ing {
+    font-size: 45px;
+    text-align: center;
+    font-style: oblique;
+    font-feature-settings: inherit;
+    /* font-family: emoji; */
+    color: black;
+}
+.Team-containers{
+    background-color: antiquewhite;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* rESPONSE CSS */
+.responseArea {
+    /* border: 1px solid; */
+    margin: 2rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textName {
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    width: 25vh;
+    text-align: center;
+  }
+  .textName>input {
+    width: 25vh;
+    padding: 0.4rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid cadetblue;
+  }
+  .message{
+    text-align: center;
+  }
+  .message>textarea {
+    width: 25vh;
+    padding: 0.4rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid cadetblue;
+  
+  }
+  .button {
+    margin: 1px 0px 7px 8px;
+    /* border: 1px solid; */
+    /* width: 25vh; */
+    text-align: center;
+    margin-left: auto;
+}
+  .button>input {
+    width: 25vh;
+    text-align: center;
+    padding: 0.3rem;
+    border: none;
+    color: wheat;
+    background: #121212;
+    font-size: 1.2rem;
+  }

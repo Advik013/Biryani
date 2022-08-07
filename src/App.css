@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.d-container {
+    border: 1px solid;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    flex-direction: column;
+    
+    /* margin: 0.06rem; */
+    background: linear-gradient(340deg,#000000 27%,#021e14 20%);
+    /* margin-right: -3rem; */
+    /* margin-top: 0.7vh; */
+}
+.d-container-v {
+    border: 1px solid;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+ 
+    border: none;
+}
+.open {
+  border: 1px solid;
+  text-align: center;
+  padding: 3rem;
+  border: none;
+  border-right: 1px solid;
+}
+.close-t {
+  border: 1px solid;
+  text-align: center;
+  padding: 3rem;
+  border: none;
+  border-left: 1px solid;
+}
+p#cp {
+ 
+    color: #dfb1b1;
+}
+
+@media screen and (max-width: 450px) {
+  .open,
+  .close-t {
+    padding: 10px;
+  }
+}
+.auto-mesage {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101%;
+    /* border: 1px solid; */
+    height: 10vh;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Algerian;
+    color: darkcyan;
+}
+/* ///////////////// */
+.video-container {
+  object-fit: contain;
+  border: 1px solid red;
+  width: 100%;
+  height: -webkit-fill-available;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorChange 3.5s ease-in-out 0ms 1;
+  transition: all;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration:  3s; ;
+  z-index: 11;
+}
+iframe.loader {
+  border-radius: 42vh;
+  height: 56vh;
+  width: 100vh;
+  border: none;
+  overflow: hidden;
+}
+
+@keyframes colorChange {
+  0%{
+    background-color: #000000;
+    transform: rotate3d(0deg);
+    border-radius: 10vh;
+
+  }
+  20%{
+    background-color: aliceblue;
+  }
+  40%{
+    background-color:plum;
+  }
+  60%{
+    background-color: beige;
+    transform: rotateX(80deg);
+
+  }
+  80%{
+    background-color: blanchedalmond;
+    border-radius: 100vh;
+
+  }
+  100%{
+    background-color: burlywood;
+    transform: rotateX(100deg);
+
+  }
+}
+
+
+.glow {
+  font-size: 10vh;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: Algerian;
+}
+
+@keyframes glow {
+  from {
+    transform: rotate3d(0deg);
+  
+  }
+  
+  to {
+    transform: rotate3d(178deg);
+  }
+}
+
+.rotate{
+  animation: rotate 4.5s ease-in-out 0ms infinite;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
